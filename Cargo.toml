@@ -1,0 +1,18 @@
+[package]
+name = "tdoa-solver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+glam = "0.24.2"
+itertools = "0.11.0"
+
+[dev-dependencies]
+approx = "0.5.1"
+criterion = "0.5.1"
+
+[[bench]]
+name = "hyperboloid_solver"
+harness = false
